@@ -1,5 +1,3 @@
-module Minitest
-  module Fastfail
-    VERSION = "0.0.1"
-  end
+module MiniTestFastFail
+  VERSION = "0.1.0"
 end

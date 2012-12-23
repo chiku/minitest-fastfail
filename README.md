@@ -1,4 +1,4 @@
-# Minitest::Fastfail
+# MiniTest FastFail
 
 Run minitests in dot-format. However if tests fail show full scope, description and the relevant stack-trace.
 
@@ -22,8 +22,8 @@ Include the gem in your project
 
 ## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes including tests (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a future version unintentionally.
+* Commit, but do not mess with the VERSION. If you want to have your own version, that is fine but bump the version in a commit by itself in another branch so I can ignore it when I pull.
+* Send me a pull request.
