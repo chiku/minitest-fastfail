@@ -1,4 +1,5 @@
 require "minitest/unit"
+require "minitest/parallel_each"
 
 module MiniTestFastFail
   # Based upon Alexander Kern's minitest-reporters (MIT License)
