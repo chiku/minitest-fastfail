@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/chiku/minitest-fastfail.png?branch=master)](https://travis-ci.org/chiku/minitest-fastfail)
 [![Code Climate](https://codeclimate.com/github/chiku/minitest-fastfail.png)](https://codeclimate.com/github/chiku/minitest-fastfail)
 
 # MiniTest FastFail
