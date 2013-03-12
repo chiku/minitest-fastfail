@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/chiku/minitest-fastfail.png)](https://codeclimate.com/github/chiku/minitest-fastfail)
+
 # MiniTest FastFail
 
 Run minitests in dot-format. However if tests fail show full scope, description and the relevant stack-trace.
