@@ -39,28 +39,12 @@ module MiniTestFastFail
 
     def failure(suite, test, test_runner)
       after_test('F')
-
-      puts
-      puts suite.name
-      print pad_test(naturalize(test))
-      print(pad_mark('FAIL'))
-      print_time(test)
-      puts
-      print_info(test_runner.exception)
-      puts
+      print_failure(suite, test, test_runner, 'FAIL')
     end
 
     def error(suite, test, test_runner)
       after_test('E')
-
-      puts
-      puts suite.name
-      print pad_test(naturalize(test))
-      print(pad_mark('ERROR'))
-      print_time(test)
-      puts
-      print_info(test_runner.exception)
-      puts
+      print_failure(suite, test, test_runner, 'ERROR')
     end
 
     def after_suite(suite)
@@ -143,11 +127,22 @@ module MiniTestFastFail
       trace = filter_backtrace(e.backtrace)
       trace.each { |line| puts pad(line, INFO_PADDING) }
     end
-    
+
+    def print_failure(suite, test, test_runner, status)
+      puts
+      puts suite.name
+      print pad_test(naturalize(test))
+      print(pad_mark(status))
+      print_time(test)
+      puts
+      print_info(test_runner.exception)
+      puts
+    end
+
     def pad(str, size)
       ' ' * size + str
     end
-    
+
     def pad_mark(str)
       "%#{MARK_SIZE}s" % str
     end
