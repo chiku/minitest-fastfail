@@ -14,7 +14,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Show a dot for each passing test. Show full description for each tests that fail or have errors.}
 
   gem.files         = Dir.glob("lib/**/*") + %w(LICENSE README.md CHANGELOG.md)
-  gem.test_files    = Dir.glob("spec/**/*")
+  gem.test_files    = Dir.glob("test/**/*")
   gem.require_paths = ["lib"]
 
   gem.add_dependency 'minitest', '>= 4.2.0'
