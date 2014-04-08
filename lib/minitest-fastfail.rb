@@ -12,15 +12,15 @@ module MiniTestFastFail
   require "minitest-fastfail/test_runner"
 
   module Reporters
-    def self.use!(console_reporters = DefaultReporter.new)
-      use_runner!(console_reporters)
+    def self.use!
+      use_runner!(FastFailReporter.new)
       use_before_test_hook!
       use_parallel_length_method!
     end
 
-    def self.use_runner!(console_reporters)
+    def self.use_runner!
       runner = MiniTestFastFail::ReporterRunner.new
-      runner.reporters = Array(console_reporters)
+      runner.reporters = [FastFailReporter.new]
       MiniTest::Unit.runner = runner
     end
 
