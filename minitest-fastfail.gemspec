@@ -12,6 +12,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["chirantan.mitra@gmail.com"]
   gem.description   = %q{Report minitest errors and failures instantly}
   gem.summary       = %q{Show a dot for each passing test. Show full description for each tests that fail or have errors.}
+  gem.license       = "MIT"
 
   gem.files         = Dir.glob("lib/**/*") + %w(LICENSE README.md CHANGELOG.md)
   gem.test_files    = Dir.glob("test/**/*")
